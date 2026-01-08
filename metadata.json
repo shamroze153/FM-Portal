@@ -1,0 +1,9 @@
+{
+  "name": "DISRUPT FM Portal v4.3.2 AI",
+  "description": "Advanced facilities management portal for AC/HVAC assets featuring AI assignment, real-time health monitoring, tech performance leaderboards, and zone-based checklists.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
