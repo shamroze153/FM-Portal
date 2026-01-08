@@ -1,22 +1,8 @@
 
-export enum AssetStatus {
-  ACTIVE = 'Active',
-  MAINTENANCE = 'Maintenance',
-  SPARE = 'Spare',
-  DISPOSED = 'Disposed',
-  OBSOLETE = 'Obsolete'
-}
-
-export enum TicketStatus {
-  OPEN = 'Open',
-  IN_PROGRESS = 'In Progress',
-  RESOLVED = 'Resolved'
-}
-
-export enum Severity {
-  MAJOR = 'Major',
-  MINOR = 'Minor'
-}
+// Shared types for the application
+export enum AssetStatus { ACTIVE = 'Active', MAINTENANCE = 'Maintenance', SPARE = 'Spare', DISPOSED = 'Disposed', OBSOLETE = 'Obsolete' }
+export enum TicketStatus { OPEN = 'Open', RESOLVED = 'Resolved' }
+export enum Severity { MAJOR = 'Major', MINOR = 'Minor' }
 
 export interface ACAsset {
   id: number;
@@ -60,16 +46,4 @@ export interface Refrigerant {
   name: string;
   type: 'AC' | 'Fridge';
   kg: number;
-}
-
-export enum ChecklistType {
-  DAILY = 'Daily',
-  MONTHLY = 'Monthly',
-  QUARTERLY = 'Quarterly'
-}
-
-export interface ChecklistRecord {
-  type: ChecklistType;
-  done: boolean;
-  assetId: number;
 }
